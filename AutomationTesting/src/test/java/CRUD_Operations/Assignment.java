@@ -35,6 +35,8 @@ public class Assignment {
 //	Step 7: Click Eraser and Erase Horizontal Line
 	driver.findElement(By.xpath("//input[@title='Use eraser']")).click();
 	act.moveByOffset(-400, -250).clickAndHold().moveByOffset(400, 0).release().build().perform();
+		
+	driver.close();
 	
 	}
 }
